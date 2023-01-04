@@ -1037,6 +1037,9 @@
       <DependentUpon>rptVoucher.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="SIS_DBDataSet.vb">
+      <DependentUpon>SIS_DBDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Forms\frmCreditorsReport.resx">
@@ -1257,7 +1260,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptDebtors.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptDebtors.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rptExpenses.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

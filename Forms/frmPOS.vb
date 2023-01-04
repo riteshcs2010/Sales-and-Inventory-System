@@ -735,7 +735,7 @@ Public Class frmPOS
             btnSave.Enabled = False
             RefreshRecords()
             MessageBox.Show("Successfully done", "Billing", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Print()
+            'Print()
         Catch ex As Exception
             MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End Try

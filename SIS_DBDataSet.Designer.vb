@@ -2408,6 +2408,12 @@ Partial Public Class SIS_DBDataSet
         
         Private columnCIN As Global.System.Data.DataColumn
         
+        Private columnShopID As Global.System.Data.DataColumn
+        
+        Private columnCompanyOwner As Global.System.Data.DataColumn
+        
+        Private columnLicenseNumber As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub New()
@@ -2516,6 +2522,30 @@ Partial Public Class SIS_DBDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property ShopIDColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnShopID
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property CompanyOwnerColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnCompanyOwner
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property LicenseNumberColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnLicenseNumber
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -2552,9 +2582,9 @@ Partial Public Class SIS_DBDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddCompanyRow(ByVal CompanyName As String, ByVal Address As String, ByVal ContactNo As String, ByVal EmailID As String, ByVal Logo() As Byte, ByVal TIN As String, ByVal STNo As String, ByVal CIN As String) As CompanyRow
+        Public Overloads Function AddCompanyRow(ByVal CompanyName As String, ByVal Address As String, ByVal ContactNo As String, ByVal EmailID As String, ByVal Logo() As Byte, ByVal TIN As String, ByVal STNo As String, ByVal CIN As String, ByVal ShopID As Integer, ByVal CompanyOwner As String, ByVal LicenseNumber As String) As CompanyRow
             Dim rowCompanyRow As CompanyRow = CType(Me.NewRow,CompanyRow)
-            Dim columnValuesArray() As Object = New Object() {Nothing, CompanyName, Address, ContactNo, EmailID, Logo, TIN, STNo, CIN}
+            Dim columnValuesArray() As Object = New Object() {Nothing, CompanyName, Address, ContactNo, EmailID, Logo, TIN, STNo, CIN, ShopID, CompanyOwner, LicenseNumber}
             rowCompanyRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowCompanyRow)
             Return rowCompanyRow
@@ -2592,6 +2622,9 @@ Partial Public Class SIS_DBDataSet
             Me.columnTIN = MyBase.Columns("TIN")
             Me.columnSTNo = MyBase.Columns("STNo")
             Me.columnCIN = MyBase.Columns("CIN")
+            Me.columnShopID = MyBase.Columns("ShopID")
+            Me.columnCompanyOwner = MyBase.Columns("CompanyOwner")
+            Me.columnLicenseNumber = MyBase.Columns("LicenseNumber")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -2615,7 +2648,14 @@ Partial Public Class SIS_DBDataSet
             MyBase.Columns.Add(Me.columnSTNo)
             Me.columnCIN = New Global.System.Data.DataColumn("CIN", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnCIN)
+            Me.columnShopID = New Global.System.Data.DataColumn("ShopID", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnShopID)
+            Me.columnCompanyOwner = New Global.System.Data.DataColumn("CompanyOwner", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnCompanyOwner)
+            Me.columnLicenseNumber = New Global.System.Data.DataColumn("LicenseNumber", GetType(String), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnLicenseNumber)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID}, true))
+            Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint2", New Global.System.Data.DataColumn() {Me.columnShopID}, false))
             Me.columnID.AutoIncrement = true
             Me.columnID.AutoIncrementSeed = -1
             Me.columnID.AutoIncrementStep = -1
@@ -2634,6 +2674,11 @@ Partial Public Class SIS_DBDataSet
             Me.columnTIN.MaxLength = 150
             Me.columnSTNo.MaxLength = 150
             Me.columnCIN.MaxLength = 150
+            Me.columnShopID.AllowDBNull = false
+            Me.columnShopID.Unique = true
+            Me.columnCompanyOwner.AllowDBNull = false
+            Me.columnCompanyOwner.MaxLength = 200
+            Me.columnLicenseNumber.MaxLength = 250
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3092,6 +3137,8 @@ Partial Public Class SIS_DBDataSet
         
         Private columnCustomerType As Global.System.Data.DataColumn
         
+        Private columnShopID As Global.System.Data.DataColumn
+        
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub New()
@@ -3232,6 +3279,14 @@ Partial Public Class SIS_DBDataSet
         End Property
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public ReadOnly Property ShopIDColumn() As Global.System.Data.DataColumn
+            Get
+                Return Me.columnShopID
+            End Get
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Browsable(false)>  _
         Public ReadOnly Property Count() As Integer
@@ -3268,9 +3323,9 @@ Partial Public Class SIS_DBDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
-        Public Overloads Function AddCustomerRow(ByVal ID As Integer, ByVal CustomerID As String, ByVal Name As String, ByVal Gender As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal ZipCode As String, ByVal ContactNo As String, ByVal EmailID As String, ByVal Remarks As String, ByVal Photo() As Byte, ByVal CustomerType As String) As CustomerRow
+        Public Overloads Function AddCustomerRow(ByVal ID As Integer, ByVal CustomerID As String, ByVal Name As String, ByVal Gender As String, ByVal Address As String, ByVal City As String, ByVal State As String, ByVal ZipCode As String, ByVal ContactNo As String, ByVal EmailID As String, ByVal Remarks As String, ByVal Photo() As Byte, ByVal CustomerType As String, ByVal ShopID As Integer) As CustomerRow
             Dim rowCustomerRow As CustomerRow = CType(Me.NewRow,CustomerRow)
-            Dim columnValuesArray() As Object = New Object() {ID, CustomerID, Name, Gender, Address, City, State, ZipCode, ContactNo, EmailID, Remarks, Photo, CustomerType}
+            Dim columnValuesArray() As Object = New Object() {ID, CustomerID, Name, Gender, Address, City, State, ZipCode, ContactNo, EmailID, Remarks, Photo, CustomerType, ShopID}
             rowCustomerRow.ItemArray = columnValuesArray
             Me.Rows.Add(rowCustomerRow)
             Return rowCustomerRow
@@ -3312,6 +3367,7 @@ Partial Public Class SIS_DBDataSet
             Me.columnRemarks = MyBase.Columns("Remarks")
             Me.columnPhoto = MyBase.Columns("Photo")
             Me.columnCustomerType = MyBase.Columns("CustomerType")
+            Me.columnShopID = MyBase.Columns("ShopID")
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -3343,6 +3399,8 @@ Partial Public Class SIS_DBDataSet
             MyBase.Columns.Add(Me.columnPhoto)
             Me.columnCustomerType = New Global.System.Data.DataColumn("CustomerType", GetType(String), Nothing, Global.System.Data.MappingType.Element)
             MyBase.Columns.Add(Me.columnCustomerType)
+            Me.columnShopID = New Global.System.Data.DataColumn("ShopID", GetType(Integer), Nothing, Global.System.Data.MappingType.Element)
+            MyBase.Columns.Add(Me.columnShopID)
             Me.Constraints.Add(New Global.System.Data.UniqueConstraint("Constraint1", New Global.System.Data.DataColumn() {Me.columnID}, true))
             Me.columnID.AllowDBNull = false
             Me.columnID.Unique = true
@@ -3357,6 +3415,7 @@ Partial Public Class SIS_DBDataSet
             Me.columnEmailID.MaxLength = 200
             Me.columnRemarks.MaxLength = 2147483647
             Me.columnCustomerType.MaxLength = 30
+            Me.columnShopID.AllowDBNull = false
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -17092,6 +17151,43 @@ Partial Public Class SIS_DBDataSet
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property ShopID() As Integer
+            Get
+                Return CType(Me(Me.tableCompany.ShopIDColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableCompany.ShopIDColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property CompanyOwner() As String
+            Get
+                Return CType(Me(Me.tableCompany.CompanyOwnerColumn),String)
+            End Get
+            Set
+                Me(Me.tableCompany.CompanyOwnerColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property LicenseNumber() As String
+            Get
+                Try 
+                    Return CType(Me(Me.tableCompany.LicenseNumberColumn),String)
+                Catch e As Global.System.InvalidCastException
+                    Throw New Global.System.Data.StrongTypingException("The value for column 'LicenseNumber' in table 'Company' is DBNull.", e)
+                End Try
+            End Get
+            Set
+                Me(Me.tableCompany.LicenseNumberColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Function IsTINNull() As Boolean
             Return Me.IsNull(Me.tableCompany.TINColumn)
         End Function
@@ -17124,6 +17220,18 @@ Partial Public Class SIS_DBDataSet
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
         Public Sub SetCINNull()
             Me(Me.tableCompany.CINColumn) = Global.System.Convert.DBNull
+        End Sub
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Function IsLicenseNumberNull() As Boolean
+            Return Me.IsNull(Me.tableCompany.LicenseNumberColumn)
+        End Function
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Sub SetLicenseNumberNull()
+            Me(Me.tableCompany.LicenseNumberColumn) = Global.System.Convert.DBNull
         End Sub
     End Class
     
@@ -17379,6 +17487,17 @@ Partial Public Class SIS_DBDataSet
             End Get
             Set
                 Me(Me.tableCustomer.CustomerTypeColumn) = value
+            End Set
+        End Property
+        
+        <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")>  _
+        Public Property ShopID() As Integer
+            Get
+                Return CType(Me(Me.tableCustomer.ShopIDColumn),Integer)
+            End Get
+            Set
+                Me(Me.tableCustomer.ShopIDColumn) = value
             End Set
         End Property
         
@@ -26013,6 +26132,9 @@ Namespace SIS_DBDataSetTableAdapters
             tableMapping.ColumnMappings.Add("TIN", "TIN")
             tableMapping.ColumnMappings.Add("STNo", "STNo")
             tableMapping.ColumnMappings.Add("CIN", "CIN")
+            tableMapping.ColumnMappings.Add("ShopID", "ShopID")
+            tableMapping.ColumnMappings.Add("CompanyOwner", "CompanyOwner")
+            tableMapping.ColumnMappings.Add("LicenseNumber", "LicenseNumber")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
@@ -26096,8 +26218,8 @@ Namespace SIS_DBDataSetTableAdapters
             Me._commandCollection = New Global.System.Data.SqlClient.SqlCommand(0) {}
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
-            Me._commandCollection(0).CommandText = "SELECT ID, CompanyName, Address, ContactNo, EmailID, Logo, TIN, STNo, CIN FROM db"& _ 
-                "o.Company"
+            Me._commandCollection(0).CommandText = "SELECT ID, CompanyName, Address, ContactNo, EmailID, Logo, TIN, STNo, CIN, ShopID"& _ 
+                ", CompanyOwner, LicenseNumber"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM     Company"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -26903,21 +27025,22 @@ Namespace SIS_DBDataSetTableAdapters
             tableMapping.ColumnMappings.Add("Remarks", "Remarks")
             tableMapping.ColumnMappings.Add("Photo", "Photo")
             tableMapping.ColumnMappings.Add("CustomerType", "CustomerType")
+            tableMapping.ColumnMappings.Add("ShopID", "ShopID")
             Me._adapter.TableMappings.Add(tableMapping)
             Me._adapter.DeleteCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.DeleteCommand.Connection = Me.Connection
-            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[Customer] WHERE (([ID] = @Original_ID) AND ((@IsNull_CustomerI"& _ 
-                "D = 1 AND [CustomerID] IS NULL) OR ([CustomerID] = @Original_CustomerID)) AND (("& _ 
-                "@IsNull_Name = 1 AND [Name] IS NULL) OR ([Name] = @Original_Name)) AND ((@IsNull"& _ 
-                "_Gender = 1 AND [Gender] IS NULL) OR ([Gender] = @Original_Gender)) AND ((@IsNul"& _ 
-                "l_Address = 1 AND [Address] IS NULL) OR ([Address] = @Original_Address)) AND ((@"& _ 
-                "IsNull_City = 1 AND [City] IS NULL) OR ([City] = @Original_City)) AND ((@IsNull_"& _ 
-                "State = 1 AND [State] IS NULL) OR ([State] = @Original_State)) AND ((@IsNull_Zip"& _ 
-                "Code = 1 AND [ZipCode] IS NULL) OR ([ZipCode] = @Original_ZipCode)) AND ((@IsNul"& _ 
-                "l_ContactNo = 1 AND [ContactNo] IS NULL) OR ([ContactNo] = @Original_ContactNo))"& _ 
-                " AND ((@IsNull_EmailID = 1 AND [EmailID] IS NULL) OR ([EmailID] = @Original_Emai"& _ 
-                "lID)) AND ((@IsNull_CustomerType = 1 AND [CustomerType] IS NULL) OR ([CustomerTy"& _ 
-                "pe] = @Original_CustomerType)))"
+            Me._adapter.DeleteCommand.CommandText = "DELETE FROM [Customer] WHERE (([ID] = @Original_ID) AND ((@IsNull_CustomerID = 1 "& _ 
+                "AND [CustomerID] IS NULL) OR ([CustomerID] = @Original_CustomerID)) AND ((@IsNul"& _ 
+                "l_Name = 1 AND [Name] IS NULL) OR ([Name] = @Original_Name)) AND ((@IsNull_Gende"& _ 
+                "r = 1 AND [Gender] IS NULL) OR ([Gender] = @Original_Gender)) AND ((@IsNull_Addr"& _ 
+                "ess = 1 AND [Address] IS NULL) OR ([Address] = @Original_Address)) AND ((@IsNull"& _ 
+                "_City = 1 AND [City] IS NULL) OR ([City] = @Original_City)) AND ((@IsNull_State "& _ 
+                "= 1 AND [State] IS NULL) OR ([State] = @Original_State)) AND ((@IsNull_ZipCode ="& _ 
+                " 1 AND [ZipCode] IS NULL) OR ([ZipCode] = @Original_ZipCode)) AND ((@IsNull_Cont"& _ 
+                "actNo = 1 AND [ContactNo] IS NULL) OR ([ContactNo] = @Original_ContactNo)) AND ("& _ 
+                "(@IsNull_EmailID = 1 AND [EmailID] IS NULL) OR ([EmailID] = @Original_EmailID)) "& _ 
+                "AND ((@IsNull_CustomerType = 1 AND [CustomerType] IS NULL) OR ([CustomerType] = "& _ 
+                "@Original_CustomerType)) AND ([ShopID] = @Original_ShopID))"
             Me._adapter.DeleteCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_ID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ID", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_CustomerID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CustomerID", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
@@ -26940,6 +27063,7 @@ Namespace SIS_DBDataSetTableAdapters
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_EmailID", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "EmailID", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_CustomerType", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CustomerType", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CustomerType", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CustomerType", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.DeleteCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_ShopID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ShopID", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.InsertCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.InsertCommand.Connection = Me.Connection
             Me._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[Customer] ([ID], [CustomerID], [Name], [Gender], [Address], [C"& _ 
@@ -26964,23 +27088,24 @@ Namespace SIS_DBDataSetTableAdapters
             Me._adapter.InsertCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CustomerType", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CustomerType", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand = New Global.System.Data.SqlClient.SqlCommand()
             Me._adapter.UpdateCommand.Connection = Me.Connection
-            Me._adapter.UpdateCommand.CommandText = "UPDATE [dbo].[Customer] SET [ID] = @ID, [CustomerID] = @CustomerID, [Name] = @Nam"& _ 
-                "e, [Gender] = @Gender, [Address] = @Address, [City] = @City, [State] = @State, ["& _ 
-                "ZipCode] = @ZipCode, [ContactNo] = @ContactNo, [EmailID] = @EmailID, [Remarks] ="& _ 
-                " @Remarks, [Photo] = @Photo, [CustomerType] = @CustomerType WHERE (([ID] = @Orig"& _ 
-                "inal_ID) AND ((@IsNull_CustomerID = 1 AND [CustomerID] IS NULL) OR ([CustomerID]"& _ 
-                " = @Original_CustomerID)) AND ((@IsNull_Name = 1 AND [Name] IS NULL) OR ([Name] "& _ 
-                "= @Original_Name)) AND ((@IsNull_Gender = 1 AND [Gender] IS NULL) OR ([Gender] ="& _ 
-                " @Original_Gender)) AND ((@IsNull_Address = 1 AND [Address] IS NULL) OR ([Addres"& _ 
-                "s] = @Original_Address)) AND ((@IsNull_City = 1 AND [City] IS NULL) OR ([City] ="& _ 
-                " @Original_City)) AND ((@IsNull_State = 1 AND [State] IS NULL) OR ([State] = @Or"& _ 
-                "iginal_State)) AND ((@IsNull_ZipCode = 1 AND [ZipCode] IS NULL) OR ([ZipCode] = "& _ 
-                "@Original_ZipCode)) AND ((@IsNull_ContactNo = 1 AND [ContactNo] IS NULL) OR ([Co"& _ 
-                "ntactNo] = @Original_ContactNo)) AND ((@IsNull_EmailID = 1 AND [EmailID] IS NULL"& _ 
-                ") OR ([EmailID] = @Original_EmailID)) AND ((@IsNull_CustomerType = 1 AND [Custom"& _ 
-                "erType] IS NULL) OR ([CustomerType] = @Original_CustomerType)));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT ID, Cus"& _ 
-                "tomerID, Name, Gender, Address, City, State, ZipCode, ContactNo, EmailID, Remark"& _ 
-                "s, Photo, CustomerType FROM Customer WHERE (ID = @ID)"
+            Me._adapter.UpdateCommand.CommandText = "UPDATE [Customer] SET [ID] = @ID, [CustomerID] = @CustomerID, [Name] = @Name, [Ge"& _ 
+                "nder] = @Gender, [Address] = @Address, [City] = @City, [State] = @State, [ZipCod"& _ 
+                "e] = @ZipCode, [ContactNo] = @ContactNo, [EmailID] = @EmailID, [Remarks] = @Rema"& _ 
+                "rks, [Photo] = @Photo, [CustomerType] = @CustomerType, [ShopID] = @ShopID WHERE "& _ 
+                "(([ID] = @Original_ID) AND ((@IsNull_CustomerID = 1 AND [CustomerID] IS NULL) OR"& _ 
+                " ([CustomerID] = @Original_CustomerID)) AND ((@IsNull_Name = 1 AND [Name] IS NUL"& _ 
+                "L) OR ([Name] = @Original_Name)) AND ((@IsNull_Gender = 1 AND [Gender] IS NULL) "& _ 
+                "OR ([Gender] = @Original_Gender)) AND ((@IsNull_Address = 1 AND [Address] IS NUL"& _ 
+                "L) OR ([Address] = @Original_Address)) AND ((@IsNull_City = 1 AND [City] IS NULL"& _ 
+                ") OR ([City] = @Original_City)) AND ((@IsNull_State = 1 AND [State] IS NULL) OR "& _ 
+                "([State] = @Original_State)) AND ((@IsNull_ZipCode = 1 AND [ZipCode] IS NULL) OR"& _ 
+                " ([ZipCode] = @Original_ZipCode)) AND ((@IsNull_ContactNo = 1 AND [ContactNo] IS"& _ 
+                " NULL) OR ([ContactNo] = @Original_ContactNo)) AND ((@IsNull_EmailID = 1 AND [Em"& _ 
+                "ailID] IS NULL) OR ([EmailID] = @Original_EmailID)) AND ((@IsNull_CustomerType ="& _ 
+                " 1 AND [CustomerType] IS NULL) OR ([CustomerType] = @Original_CustomerType)) AND"& _ 
+                " ([ShopID] = @Original_ShopID));"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"SELECT ID, CustomerID, Name, Gender, Address, "& _ 
+                "City, State, ZipCode, ContactNo, EmailID, Remarks, Photo, CustomerType, ShopID F"& _ 
+                "ROM Customer WHERE (ID = @ID)"
             Me._adapter.UpdateCommand.CommandType = Global.System.Data.CommandType.Text
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ID", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CustomerID", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CustomerID", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
@@ -26995,6 +27120,7 @@ Namespace SIS_DBDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Remarks", Global.System.Data.SqlDbType.NVarChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Remarks", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Photo", Global.System.Data.SqlDbType.Image, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "Photo", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@CustomerType", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CustomerType", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@ShopID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ShopID", Global.System.Data.DataRowVersion.Current, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_ID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ID", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_CustomerID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CustomerID", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CustomerID", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CustomerID", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
@@ -27016,6 +27142,7 @@ Namespace SIS_DBDataSetTableAdapters
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_EmailID", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "EmailID", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@IsNull_CustomerType", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CustomerType", Global.System.Data.DataRowVersion.Original, true, Nothing, "", "", ""))
             Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_CustomerType", Global.System.Data.SqlDbType.NChar, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "CustomerType", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
+            Me._adapter.UpdateCommand.Parameters.Add(New Global.System.Data.SqlClient.SqlParameter("@Original_ShopID", Global.System.Data.SqlDbType.Int, 0, Global.System.Data.ParameterDirection.Input, 0, 0, "ShopID", Global.System.Data.DataRowVersion.Original, false, Nothing, "", "", ""))
         End Sub
         
         <Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
@@ -27032,7 +27159,7 @@ Namespace SIS_DBDataSetTableAdapters
             Me._commandCollection(0) = New Global.System.Data.SqlClient.SqlCommand()
             Me._commandCollection(0).Connection = Me.Connection
             Me._commandCollection(0).CommandText = "SELECT ID, CustomerID, Name, Gender, Address, City, State, ZipCode, ContactNo, Em"& _ 
-                "ailID, Remarks, Photo, CustomerType FROM dbo.Customer"
+                "ailID, Remarks, Photo, CustomerType, ShopID"&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"FROM     Customer"
             Me._commandCollection(0).CommandType = Global.System.Data.CommandType.Text
         End Sub
         
@@ -27092,7 +27219,7 @@ Namespace SIS_DBDataSetTableAdapters
          Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0"),  _
          Global.System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter"),  _
          Global.System.ComponentModel.DataObjectMethodAttribute(Global.System.ComponentModel.DataObjectMethodType.Delete, true)>  _
-        Public Overloads Overridable Function Delete(ByVal Original_ID As Integer, ByVal Original_CustomerID As String, ByVal Original_Name As String, ByVal Original_Gender As String, ByVal Original_Address As String, ByVal Original_City As String, ByVal Original_State As String, ByVal Original_ZipCode As String, ByVal Original_ContactNo As String, ByVal Original_EmailID As String, ByVal Original_CustomerType As String) As Integer
+        Public Overloads Overridable Function Delete(ByVal Original_ID As Integer, ByVal Original_CustomerID As String, ByVal Original_Name As String, ByVal Original_Gender As String, ByVal Original_Address As String, ByVal Original_City As String, ByVal Original_State As String, ByVal Original_ZipCode As String, ByVal Original_ContactNo As String, ByVal Original_EmailID As String, ByVal Original_CustomerType As String, ByVal Original_ShopID As Integer) As Integer
             Me.Adapter.DeleteCommand.Parameters(0).Value = CType(Original_ID,Integer)
             If (Original_CustomerID Is Nothing) Then
                 Me.Adapter.DeleteCommand.Parameters(1).Value = CType(1,Object)
@@ -27164,6 +27291,7 @@ Namespace SIS_DBDataSetTableAdapters
                 Me.Adapter.DeleteCommand.Parameters(19).Value = CType(0,Object)
                 Me.Adapter.DeleteCommand.Parameters(20).Value = CType(Original_CustomerType,String)
             End If
+            Me.Adapter.DeleteCommand.Parameters(21).Value = CType(Original_ShopID,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.DeleteCommand.Connection.State
             If ((Me.Adapter.DeleteCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -27278,6 +27406,7 @@ Namespace SIS_DBDataSetTableAdapters
                     ByVal Remarks As String,  _
                     ByVal Photo() As Byte,  _
                     ByVal CustomerType As String,  _
+                    ByVal ShopID As Integer,  _
                     ByVal Original_ID As Integer,  _
                     ByVal Original_CustomerID As String,  _
                     ByVal Original_Name As String,  _
@@ -27288,7 +27417,8 @@ Namespace SIS_DBDataSetTableAdapters
                     ByVal Original_ZipCode As String,  _
                     ByVal Original_ContactNo As String,  _
                     ByVal Original_EmailID As String,  _
-                    ByVal Original_CustomerType As String) As Integer
+                    ByVal Original_CustomerType As String,  _
+                    ByVal Original_ShopID As Integer) As Integer
             Me.Adapter.UpdateCommand.Parameters(0).Value = CType(ID,Integer)
             If (CustomerID Is Nothing) Then
                 Me.Adapter.UpdateCommand.Parameters(1).Value = Global.System.DBNull.Value
@@ -27350,77 +27480,79 @@ Namespace SIS_DBDataSetTableAdapters
             Else
                 Me.Adapter.UpdateCommand.Parameters(12).Value = CType(CustomerType,String)
             End If
-            Me.Adapter.UpdateCommand.Parameters(13).Value = CType(Original_ID,Integer)
+            Me.Adapter.UpdateCommand.Parameters(13).Value = CType(ShopID,Integer)
+            Me.Adapter.UpdateCommand.Parameters(14).Value = CType(Original_ID,Integer)
             If (Original_CustomerID Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(14).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(Original_CustomerID,String)
+                Me.Adapter.UpdateCommand.Parameters(15).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(Original_CustomerID,String)
             End If
             If (Original_Name Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(17).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(16).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(Original_Name,String)
+                Me.Adapter.UpdateCommand.Parameters(17).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(Original_Name,String)
             End If
             If (Original_Gender Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(19).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(18).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(Original_Gender,String)
+                Me.Adapter.UpdateCommand.Parameters(19).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(Original_Gender,String)
             End If
             If (Original_Address Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(21).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(22).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(20).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(Original_Address,String)
+                Me.Adapter.UpdateCommand.Parameters(21).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(Original_Address,String)
             End If
             If (Original_City Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(23).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(24).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(22).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(Original_City,String)
+                Me.Adapter.UpdateCommand.Parameters(23).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(Original_City,String)
             End If
             If (Original_State Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(25).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(26).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(24).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(Original_State,String)
+                Me.Adapter.UpdateCommand.Parameters(25).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(Original_State,String)
             End If
             If (Original_ZipCode Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(27).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(28).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(26).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(Original_ZipCode,String)
+                Me.Adapter.UpdateCommand.Parameters(27).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(Original_ZipCode,String)
             End If
             If (Original_ContactNo Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(29).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(30).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(28).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(Original_ContactNo,String)
+                Me.Adapter.UpdateCommand.Parameters(29).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(Original_ContactNo,String)
             End If
             If (Original_EmailID Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(31).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(32).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(30).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(Original_EmailID,String)
+                Me.Adapter.UpdateCommand.Parameters(31).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(Original_EmailID,String)
             End If
             If (Original_CustomerType Is Nothing) Then
-                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(1,Object)
-                Me.Adapter.UpdateCommand.Parameters(33).Value = Global.System.DBNull.Value
+                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(1,Object)
+                Me.Adapter.UpdateCommand.Parameters(34).Value = Global.System.DBNull.Value
             Else
-                Me.Adapter.UpdateCommand.Parameters(32).Value = CType(0,Object)
-                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(Original_CustomerType,String)
+                Me.Adapter.UpdateCommand.Parameters(33).Value = CType(0,Object)
+                Me.Adapter.UpdateCommand.Parameters(34).Value = CType(Original_CustomerType,String)
             End If
+            Me.Adapter.UpdateCommand.Parameters(35).Value = CType(Original_ShopID,Integer)
             Dim previousConnectionState As Global.System.Data.ConnectionState = Me.Adapter.UpdateCommand.Connection.State
             If ((Me.Adapter.UpdateCommand.Connection.State And Global.System.Data.ConnectionState.Open)  _
                         <> Global.System.Data.ConnectionState.Open) Then
@@ -27453,6 +27585,7 @@ Namespace SIS_DBDataSetTableAdapters
                     ByVal Remarks As String,  _
                     ByVal Photo() As Byte,  _
                     ByVal CustomerType As String,  _
+                    ByVal ShopID As Integer,  _
                     ByVal Original_ID As Integer,  _
                     ByVal Original_CustomerID As String,  _
                     ByVal Original_Name As String,  _
@@ -27463,8 +27596,9 @@ Namespace SIS_DBDataSetTableAdapters
                     ByVal Original_ZipCode As String,  _
                     ByVal Original_ContactNo As String,  _
                     ByVal Original_EmailID As String,  _
-                    ByVal Original_CustomerType As String) As Integer
-            Return Me.Update(Original_ID, CustomerID, Name, Gender, Address, City, State, ZipCode, ContactNo, EmailID, Remarks, Photo, CustomerType, Original_ID, Original_CustomerID, Original_Name, Original_Gender, Original_Address, Original_City, Original_State, Original_ZipCode, Original_ContactNo, Original_EmailID, Original_CustomerType)
+                    ByVal Original_CustomerType As String,  _
+                    ByVal Original_ShopID As Integer) As Integer
+            Return Me.Update(Original_ID, CustomerID, Name, Gender, Address, City, State, ZipCode, ContactNo, EmailID, Remarks, Photo, CustomerType, ShopID, Original_ID, Original_CustomerID, Original_Name, Original_Gender, Original_Address, Original_City, Original_State, Original_ZipCode, Original_ContactNo, Original_EmailID, Original_CustomerType, Original_ShopID)
         End Function
     End Class
     

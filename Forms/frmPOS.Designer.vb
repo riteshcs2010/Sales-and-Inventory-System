@@ -184,10 +184,9 @@ Partial Class frmPOS
         '
         Label5.AutoSize = True
         Label5.ForeColor = System.Drawing.Color.Black
-        Label5.Location = New System.Drawing.Point(9, 19)
-        Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Label5.Location = New System.Drawing.Point(12, 23)
         Label5.Name = "Label5"
-        Label5.Size = New System.Drawing.Size(77, 17)
+        Label5.Size = New System.Drawing.Size(99, 21)
         Label5.TabIndex = 268
         Label5.Text = "Invoice No. :"
         '
@@ -196,10 +195,9 @@ Partial Class frmPOS
         Label51.AutoSize = True
         Label51.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Label51.ForeColor = System.Drawing.Color.Black
-        Label51.Location = New System.Drawing.Point(6, 74)
-        Label51.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Label51.Location = New System.Drawing.Point(8, 91)
         Label51.Name = "Label51"
-        Label51.Size = New System.Drawing.Size(62, 17)
+        Label51.Size = New System.Drawing.Size(82, 21)
         Label51.TabIndex = 319
         Label51.Text = "Discount :"
         '
@@ -208,10 +206,9 @@ Partial Class frmPOS
         Label49.AutoSize = True
         Label49.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Label49.ForeColor = System.Drawing.Color.Black
-        Label49.Location = New System.Drawing.Point(257, 44)
-        Label49.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Label49.Location = New System.Drawing.Point(343, 54)
         Label49.Name = "Label49"
-        Label49.Size = New System.Drawing.Size(59, 17)
+        Label49.Size = New System.Drawing.Size(76, 21)
         Label49.TabIndex = 314
         Label49.Text = "Amount :"
         '
@@ -220,10 +217,9 @@ Partial Class frmPOS
         Label6.AutoSize = True
         Label6.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Label6.ForeColor = System.Drawing.Color.Black
-        Label6.Location = New System.Drawing.Point(6, 101)
-        Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Label6.Location = New System.Drawing.Point(8, 124)
         Label6.Name = "Label6"
-        Label6.Size = New System.Drawing.Size(39, 17)
+        Label6.Size = New System.Drawing.Size(50, 21)
         Label6.TabIndex = 312
         Label6.Text = "VAT :"
         '
@@ -231,10 +227,9 @@ Partial Class frmPOS
         '
         Label25.AutoSize = True
         Label25.ForeColor = System.Drawing.Color.Black
-        Label25.Location = New System.Drawing.Point(6, 127)
-        Label25.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Label25.Location = New System.Drawing.Point(8, 156)
         Label25.Name = "Label25"
-        Label25.Size = New System.Drawing.Size(91, 17)
+        Label25.Size = New System.Drawing.Size(115, 21)
         Label25.TabIndex = 326
         Label25.Text = "Total Amount :"
         '
@@ -261,9 +256,10 @@ Partial Class frmPOS
         Me.Panel1.Controls.Add(Me.GroupBox4)
         Me.Panel1.Controls.Add(Me.Panel3)
         Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Location = New System.Drawing.Point(7, 6)
+        Me.Panel1.Location = New System.Drawing.Point(9, 7)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1170, 652)
+        Me.Panel1.Size = New System.Drawing.Size(1559, 802)
         Me.Panel1.TabIndex = 2
         '
         'btnScanItems
@@ -273,9 +269,10 @@ Partial Class frmPOS
         Me.btnScanItems.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnScanItems.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnScanItems.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnScanItems.Location = New System.Drawing.Point(1045, 300)
+        Me.btnScanItems.Location = New System.Drawing.Point(1393, 369)
+        Me.btnScanItems.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnScanItems.Name = "btnScanItems"
-        Me.btnScanItems.Size = New System.Drawing.Size(117, 42)
+        Me.btnScanItems.Size = New System.Drawing.Size(156, 52)
         Me.btnScanItems.TabIndex = 7
         Me.btnScanItems.Text = "Scan Items"
         Me.btnScanItems.UseVisualStyleBackColor = False
@@ -290,9 +287,10 @@ Partial Class frmPOS
         Me.btnKeyboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnKeyboard.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnKeyboard.Image = Global.Sales_and_Inventory_System.My.Resources.Resources.keyboard_icon__1_
-        Me.btnKeyboard.Location = New System.Drawing.Point(1024, 8)
+        Me.btnKeyboard.Location = New System.Drawing.Point(1365, 10)
+        Me.btnKeyboard.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnKeyboard.Name = "btnKeyboard"
-        Me.btnKeyboard.Size = New System.Drawing.Size(34, 34)
+        Me.btnKeyboard.Size = New System.Drawing.Size(45, 42)
         Me.btnKeyboard.TabIndex = 405
         Me.btnKeyboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnKeyboard.UseVisualStyleBackColor = False
@@ -307,9 +305,10 @@ Partial Class frmPOS
         Me.btnMaximise.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMaximise.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMaximise.Image = Global.Sales_and_Inventory_System.My.Resources.Resources.User_Interface_Restore_Window_icon__1_
-        Me.btnMaximise.Location = New System.Drawing.Point(1095, 8)
+        Me.btnMaximise.Location = New System.Drawing.Point(1460, 10)
+        Me.btnMaximise.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnMaximise.Name = "btnMaximise"
-        Me.btnMaximise.Size = New System.Drawing.Size(34, 34)
+        Me.btnMaximise.Size = New System.Drawing.Size(45, 42)
         Me.btnMaximise.TabIndex = 404
         Me.btnMaximise.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnMaximise.UseVisualStyleBackColor = False
@@ -324,9 +323,10 @@ Partial Class frmPOS
         Me.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMinimize.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMinimize.Image = Global.Sales_and_Inventory_System.My.Resources.Resources.Programming_Minimize_Window_icon
-        Me.btnMinimize.Location = New System.Drawing.Point(1059, 8)
+        Me.btnMinimize.Location = New System.Drawing.Point(1412, 10)
+        Me.btnMinimize.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnMinimize.Name = "btnMinimize"
-        Me.btnMinimize.Size = New System.Drawing.Size(34, 34)
+        Me.btnMinimize.Size = New System.Drawing.Size(45, 42)
         Me.btnMinimize.TabIndex = 403
         Me.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnMinimize.UseVisualStyleBackColor = False
@@ -340,9 +340,10 @@ Partial Class frmPOS
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnClose.Image = Global.Sales_and_Inventory_System.My.Resources.Resources.Button_Delete_icon11
-        Me.btnClose.Location = New System.Drawing.Point(1131, 8)
+        Me.btnClose.Location = New System.Drawing.Point(1508, 10)
+        Me.btnClose.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(34, 34)
+        Me.btnClose.Size = New System.Drawing.Size(45, 42)
         Me.btnClose.TabIndex = 402
         Me.btnClose.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.btnClose.UseVisualStyleBackColor = False
@@ -380,7 +381,8 @@ Partial Class frmPOS
         Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle5
         Me.DataGridView2.EnableHeadersVisualStyles = False
         Me.DataGridView2.GridColor = System.Drawing.Color.White
-        Me.DataGridView2.Location = New System.Drawing.Point(682, 55)
+        Me.DataGridView2.Location = New System.Drawing.Point(909, 68)
+        Me.DataGridView2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.ReadOnly = True
         Me.DataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
@@ -403,12 +405,13 @@ Partial Class frmPOS
         Me.DataGridView2.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView2.Size = New System.Drawing.Size(358, 135)
+        Me.DataGridView2.Size = New System.Drawing.Size(477, 166)
         Me.DataGridView2.TabIndex = 86
         '
         'Column8
         '
         Me.Column8.HeaderText = "Payment Mode"
+        Me.Column8.MinimumWidth = 6
         Me.Column8.Name = "Column8"
         Me.Column8.ReadOnly = True
         '
@@ -417,6 +420,7 @@ Partial Class frmPOS
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
         Me.Column15.DefaultCellStyle = DataGridViewCellStyle3
         Me.Column15.HeaderText = "Payment"
+        Me.Column15.MinimumWidth = 6
         Me.Column15.Name = "Column15"
         Me.Column15.ReadOnly = True
         '
@@ -425,6 +429,7 @@ Partial Class frmPOS
         DataGridViewCellStyle4.Format = "dd/MM/yyyy"
         Me.Column16.DefaultCellStyle = DataGridViewCellStyle4
         Me.Column16.HeaderText = "Payment Date"
+        Me.Column16.MinimumWidth = 6
         Me.Column16.Name = "Column16"
         Me.Column16.ReadOnly = True
         '
@@ -432,9 +437,10 @@ Partial Class frmPOS
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(539, 180)
+        Me.Label8.Location = New System.Drawing.Point(719, 222)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(55, 13)
+        Me.Label8.Size = New System.Drawing.Size(72, 17)
         Me.Label8.TabIndex = 85
         Me.Label8.Text = "Remarks :"
         '
@@ -451,9 +457,11 @@ Partial Class frmPOS
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox2.Location = New System.Drawing.Point(323, 49)
+        Me.GroupBox2.Location = New System.Drawing.Point(431, 60)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(353, 128)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Size = New System.Drawing.Size(471, 158)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Payment Info"
@@ -463,9 +471,10 @@ Partial Class frmPOS
         Me.btnListReset1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.btnListReset1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnListReset1.ForeColor = System.Drawing.Color.OrangeRed
-        Me.btnListReset1.Location = New System.Drawing.Point(265, 12)
+        Me.btnListReset1.Location = New System.Drawing.Point(353, 15)
+        Me.btnListReset1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnListReset1.Name = "btnListReset1"
-        Me.btnListReset1.Size = New System.Drawing.Size(82, 26)
+        Me.btnListReset1.Size = New System.Drawing.Size(109, 32)
         Me.btnListReset1.TabIndex = 27
         Me.btnListReset1.Text = "Reset"
         Me.btnListReset1.UseVisualStyleBackColor = False
@@ -476,9 +485,10 @@ Partial Class frmPOS
         Me.btnListUpdate1.Enabled = False
         Me.btnListUpdate1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnListUpdate1.ForeColor = System.Drawing.Color.OrangeRed
-        Me.btnListUpdate1.Location = New System.Drawing.Point(265, 96)
+        Me.btnListUpdate1.Location = New System.Drawing.Point(353, 118)
+        Me.btnListUpdate1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnListUpdate1.Name = "btnListUpdate1"
-        Me.btnListUpdate1.Size = New System.Drawing.Size(82, 26)
+        Me.btnListUpdate1.Size = New System.Drawing.Size(109, 32)
         Me.btnListUpdate1.TabIndex = 26
         Me.btnListUpdate1.Text = "Update"
         Me.btnListUpdate1.UseVisualStyleBackColor = False
@@ -487,27 +497,29 @@ Partial Class frmPOS
         '
         Me.dtpPaymentDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpPaymentDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpPaymentDate.Location = New System.Drawing.Point(123, 89)
-        Me.dtpPaymentDate.Margin = New System.Windows.Forms.Padding(2)
+        Me.dtpPaymentDate.Location = New System.Drawing.Point(164, 110)
+        Me.dtpPaymentDate.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dtpPaymentDate.Name = "dtpPaymentDate"
-        Me.dtpPaymentDate.Size = New System.Drawing.Size(111, 24)
+        Me.dtpPaymentDate.Size = New System.Drawing.Size(147, 28)
         Me.dtpPaymentDate.TabIndex = 2
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(7, 91)
+        Me.Label7.Location = New System.Drawing.Point(9, 112)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(92, 17)
+        Me.Label7.Size = New System.Drawing.Size(115, 21)
         Me.Label7.TabIndex = 25
         Me.Label7.Text = "Payment Date :"
         '
         'txtPayment
         '
         Me.txtPayment.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPayment.Location = New System.Drawing.Point(123, 56)
+        Me.txtPayment.Location = New System.Drawing.Point(164, 69)
+        Me.txtPayment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPayment.Name = "txtPayment"
-        Me.txtPayment.Size = New System.Drawing.Size(121, 24)
+        Me.txtPayment.Size = New System.Drawing.Size(160, 28)
         Me.txtPayment.TabIndex = 1
         Me.txtPayment.Text = "0.00"
         Me.txtPayment.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
@@ -517,9 +529,10 @@ Partial Class frmPOS
         Me.cmbPaymentMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbPaymentMode.FormattingEnabled = True
         Me.cmbPaymentMode.Items.AddRange(New Object() {"By Cash", "By Cheque", "By Credit Card", "By Debit Card"})
-        Me.cmbPaymentMode.Location = New System.Drawing.Point(123, 24)
+        Me.cmbPaymentMode.Location = New System.Drawing.Point(164, 30)
+        Me.cmbPaymentMode.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbPaymentMode.Name = "cmbPaymentMode"
-        Me.cmbPaymentMode.Size = New System.Drawing.Size(121, 25)
+        Me.cmbPaymentMode.Size = New System.Drawing.Size(160, 29)
         Me.cmbPaymentMode.TabIndex = 0
         '
         'btnRemove1
@@ -528,9 +541,10 @@ Partial Class frmPOS
         Me.btnRemove1.Enabled = False
         Me.btnRemove1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRemove1.ForeColor = System.Drawing.Color.OrangeRed
-        Me.btnRemove1.Location = New System.Drawing.Point(265, 68)
+        Me.btnRemove1.Location = New System.Drawing.Point(353, 84)
+        Me.btnRemove1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnRemove1.Name = "btnRemove1"
-        Me.btnRemove1.Size = New System.Drawing.Size(82, 26)
+        Me.btnRemove1.Size = New System.Drawing.Size(109, 32)
         Me.btnRemove1.TabIndex = 4
         Me.btnRemove1.Text = "Remove"
         Me.btnRemove1.UseVisualStyleBackColor = False
@@ -540,9 +554,10 @@ Partial Class frmPOS
         Me.btnAdd1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.btnAdd1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAdd1.ForeColor = System.Drawing.Color.OrangeRed
-        Me.btnAdd1.Location = New System.Drawing.Point(265, 40)
+        Me.btnAdd1.Location = New System.Drawing.Point(353, 49)
+        Me.btnAdd1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAdd1.Name = "btnAdd1"
-        Me.btnAdd1.Size = New System.Drawing.Size(82, 26)
+        Me.btnAdd1.Size = New System.Drawing.Size(109, 32)
         Me.btnAdd1.TabIndex = 3
         Me.btnAdd1.Text = "Add"
         Me.btnAdd1.UseVisualStyleBackColor = False
@@ -550,18 +565,20 @@ Partial Class frmPOS
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(7, 24)
+        Me.Label12.Location = New System.Drawing.Point(9, 30)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(98, 17)
+        Me.Label12.Size = New System.Drawing.Size(122, 21)
         Me.Label12.TabIndex = 11
         Me.Label12.Text = "Payment Mode :"
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(7, 55)
+        Me.Label13.Location = New System.Drawing.Point(9, 68)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(63, 17)
+        Me.Label13.Size = New System.Drawing.Size(79, 21)
         Me.Label13.TabIndex = 22
         Me.Label13.Text = "Payment :"
         '
@@ -571,11 +588,12 @@ Partial Class frmPOS
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtRemarks.BackColor = System.Drawing.Color.White
         Me.txtRemarks.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRemarks.Location = New System.Drawing.Point(542, 196)
+        Me.txtRemarks.Location = New System.Drawing.Point(723, 241)
+        Me.txtRemarks.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtRemarks.Multiline = True
         Me.txtRemarks.Name = "txtRemarks"
         Me.txtRemarks.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.txtRemarks.Size = New System.Drawing.Size(498, 91)
+        Me.txtRemarks.Size = New System.Drawing.Size(663, 111)
         Me.txtRemarks.TabIndex = 6
         '
         'Panel4
@@ -589,18 +607,20 @@ Partial Class frmPOS
         Me.Panel4.Controls.Add(Me.Label34)
         Me.Panel4.Controls.Add(Me.Label35)
         Me.Panel4.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Panel4.Location = New System.Drawing.Point(323, 191)
+        Me.Panel4.Location = New System.Drawing.Point(431, 235)
+        Me.Panel4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(213, 98)
+        Me.Panel4.Size = New System.Drawing.Size(283, 120)
         Me.Panel4.TabIndex = 5
         '
         'txtGrandTotal
         '
         Me.txtGrandTotal.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtGrandTotal.Location = New System.Drawing.Point(101, 6)
+        Me.txtGrandTotal.Location = New System.Drawing.Point(135, 7)
+        Me.txtGrandTotal.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtGrandTotal.Name = "txtGrandTotal"
         Me.txtGrandTotal.ReadOnly = True
-        Me.txtGrandTotal.Size = New System.Drawing.Size(105, 24)
+        Me.txtGrandTotal.Size = New System.Drawing.Size(139, 28)
         Me.txtGrandTotal.TabIndex = 0
         Me.txtGrandTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -608,29 +628,32 @@ Partial Class frmPOS
         '
         Me.Label31.AutoSize = True
         Me.Label31.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(5, 11)
+        Me.Label31.Location = New System.Drawing.Point(7, 14)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(81, 17)
+        Me.Label31.Size = New System.Drawing.Size(105, 21)
         Me.Label31.TabIndex = 84
         Me.Label31.Text = "Grand Total :"
         '
         'txtPaymentDue
         '
         Me.txtPaymentDue.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPaymentDue.Location = New System.Drawing.Point(101, 65)
+        Me.txtPaymentDue.Location = New System.Drawing.Point(135, 80)
+        Me.txtPaymentDue.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtPaymentDue.Name = "txtPaymentDue"
         Me.txtPaymentDue.ReadOnly = True
-        Me.txtPaymentDue.Size = New System.Drawing.Size(105, 24)
+        Me.txtPaymentDue.Size = New System.Drawing.Size(139, 28)
         Me.txtPaymentDue.TabIndex = 2
         Me.txtPaymentDue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtTotalPayment
         '
         Me.txtTotalPayment.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTotalPayment.Location = New System.Drawing.Point(101, 36)
+        Me.txtTotalPayment.Location = New System.Drawing.Point(135, 44)
+        Me.txtTotalPayment.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTotalPayment.Name = "txtTotalPayment"
         Me.txtTotalPayment.ReadOnly = True
-        Me.txtTotalPayment.Size = New System.Drawing.Size(105, 24)
+        Me.txtTotalPayment.Size = New System.Drawing.Size(139, 28)
         Me.txtTotalPayment.TabIndex = 1
         Me.txtTotalPayment.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -638,9 +661,10 @@ Partial Class frmPOS
         '
         Me.Label34.AutoSize = True
         Me.Label34.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label34.Location = New System.Drawing.Point(5, 66)
+        Me.Label34.Location = New System.Drawing.Point(7, 81)
+        Me.Label34.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(89, 17)
+        Me.Label34.Size = New System.Drawing.Size(112, 21)
         Me.Label34.TabIndex = 79
         Me.Label34.Text = "Payment Due :"
         '
@@ -648,9 +672,10 @@ Partial Class frmPOS
         '
         Me.Label35.AutoSize = True
         Me.Label35.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label35.Location = New System.Drawing.Point(5, 39)
+        Me.Label35.Location = New System.Drawing.Point(7, 48)
+        Me.Label35.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label35.Name = "Label35"
-        Me.Label35.Size = New System.Drawing.Size(95, 17)
+        Me.Label35.Size = New System.Drawing.Size(119, 21)
         Me.Label35.TabIndex = 78
         Me.Label35.Text = "Total Payment :"
         '
@@ -692,7 +717,8 @@ Partial Class frmPOS
         Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle20
         Me.DataGridView1.EnableHeadersVisualStyles = False
         Me.DataGridView1.GridColor = System.Drawing.Color.White
-        Me.DataGridView1.Location = New System.Drawing.Point(3, 451)
+        Me.DataGridView1.Location = New System.Drawing.Point(4, 555)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
@@ -714,13 +740,14 @@ Partial Class frmPOS
         Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle22
         Me.DataGridView1.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.[False]
         Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.DataGridView1.Size = New System.Drawing.Size(1162, 193)
+        Me.DataGridView1.Size = New System.Drawing.Size(1549, 238)
         Me.DataGridView1.TabIndex = 10
         '
         'Column12
         '
         Me.Column12.FillWeight = 97.60427!
         Me.Column12.HeaderText = "Product Code"
+        Me.Column12.MinimumWidth = 6
         Me.Column12.Name = "Column12"
         Me.Column12.ReadOnly = True
         '
@@ -728,6 +755,7 @@ Partial Class frmPOS
         '
         Me.Column1.FillWeight = 98.22199!
         Me.Column1.HeaderText = "Product Name"
+        Me.Column1.MinimumWidth = 6
         Me.Column1.Name = "Column1"
         Me.Column1.ReadOnly = True
         '
@@ -735,6 +763,7 @@ Partial Class frmPOS
         '
         Me.Column17.FillWeight = 98.7849!
         Me.Column17.HeaderText = "Barcode"
+        Me.Column17.MinimumWidth = 6
         Me.Column17.Name = "Column17"
         Me.Column17.ReadOnly = True
         '
@@ -743,6 +772,7 @@ Partial Class frmPOS
         DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
         Me.Column2.DefaultCellStyle = DataGridViewCellStyle10
         Me.Column2.HeaderText = "Cost Price"
+        Me.Column2.MinimumWidth = 6
         Me.Column2.Name = "Column2"
         Me.Column2.ReadOnly = True
         Me.Column2.Visible = False
@@ -753,6 +783,7 @@ Partial Class frmPOS
         Me.Column13.DefaultCellStyle = DataGridViewCellStyle11
         Me.Column13.FillWeight = 99.29787!
         Me.Column13.HeaderText = "Price"
+        Me.Column13.MinimumWidth = 6
         Me.Column13.Name = "Column13"
         Me.Column13.ReadOnly = True
         '
@@ -761,6 +792,7 @@ Partial Class frmPOS
         DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopRight
         Me.Column14.DefaultCellStyle = DataGridViewCellStyle12
         Me.Column14.HeaderText = "Margin"
+        Me.Column14.MinimumWidth = 6
         Me.Column14.Name = "Column14"
         Me.Column14.ReadOnly = True
         Me.Column14.Visible = False
@@ -771,6 +803,7 @@ Partial Class frmPOS
         Me.Column3.DefaultCellStyle = DataGridViewCellStyle13
         Me.Column3.FillWeight = 99.76534!
         Me.Column3.HeaderText = "Quantity"
+        Me.Column3.MinimumWidth = 6
         Me.Column3.Name = "Column3"
         Me.Column3.ReadOnly = True
         '
@@ -780,6 +813,7 @@ Partial Class frmPOS
         Me.Column4.DefaultCellStyle = DataGridViewCellStyle14
         Me.Column4.FillWeight = 100.1913!
         Me.Column4.HeaderText = "Amount"
+        Me.Column4.MinimumWidth = 6
         Me.Column4.Name = "Column4"
         Me.Column4.ReadOnly = True
         '
@@ -789,6 +823,7 @@ Partial Class frmPOS
         Me.Column5.DefaultCellStyle = DataGridViewCellStyle15
         Me.Column5.FillWeight = 100.5795!
         Me.Column5.HeaderText = "Discount %"
+        Me.Column5.MinimumWidth = 6
         Me.Column5.Name = "Column5"
         Me.Column5.ReadOnly = True
         '
@@ -798,6 +833,7 @@ Partial Class frmPOS
         Me.Column6.DefaultCellStyle = DataGridViewCellStyle16
         Me.Column6.FillWeight = 100.9332!
         Me.Column6.HeaderText = "Discount"
+        Me.Column6.MinimumWidth = 6
         Me.Column6.Name = "Column6"
         Me.Column6.ReadOnly = True
         '
@@ -807,6 +843,7 @@ Partial Class frmPOS
         Me.Column9.DefaultCellStyle = DataGridViewCellStyle17
         Me.Column9.FillWeight = 101.2555!
         Me.Column9.HeaderText = "VAT %"
+        Me.Column9.MinimumWidth = 6
         Me.Column9.Name = "Column9"
         Me.Column9.ReadOnly = True
         '
@@ -816,6 +853,7 @@ Partial Class frmPOS
         Me.Column10.DefaultCellStyle = DataGridViewCellStyle18
         Me.Column10.FillWeight = 101.5493!
         Me.Column10.HeaderText = "VAT Amt"
+        Me.Column10.MinimumWidth = 6
         Me.Column10.Name = "Column10"
         Me.Column10.ReadOnly = True
         '
@@ -825,12 +863,14 @@ Partial Class frmPOS
         Me.Column11.DefaultCellStyle = DataGridViewCellStyle19
         Me.Column11.FillWeight = 101.817!
         Me.Column11.HeaderText = "Total Amt."
+        Me.Column11.MinimumWidth = 6
         Me.Column11.Name = "Column11"
         Me.Column11.ReadOnly = True
         '
         'Column7
         '
         Me.Column7.HeaderText = "PID"
+        Me.Column7.MinimumWidth = 6
         Me.Column7.Name = "Column7"
         Me.Column7.ReadOnly = True
         Me.Column7.Visible = False
@@ -869,9 +909,11 @@ Partial Class frmPOS
         Me.GroupBox5.Controls.Add(Me.Label11)
         Me.GroupBox5.Controls.Add(Me.txtSellingPrice)
         Me.GroupBox5.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox5.Location = New System.Drawing.Point(9, 289)
+        Me.GroupBox5.Location = New System.Drawing.Point(12, 356)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(1031, 158)
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox5.Size = New System.Drawing.Size(1375, 194)
         Me.GroupBox5.TabIndex = 2
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "Product Details"
@@ -880,18 +922,20 @@ Partial Class frmPOS
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(560, 23)
+        Me.Label16.Location = New System.Drawing.Point(747, 28)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(58, 17)
+        Me.Label16.Size = New System.Drawing.Size(74, 21)
         Me.Label16.TabIndex = 330
         Me.Label16.Text = "Barcode :"
         '
         'txtBarcode
         '
         Me.txtBarcode.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtBarcode.Location = New System.Drawing.Point(618, 20)
+        Me.txtBarcode.Location = New System.Drawing.Point(824, 25)
+        Me.txtBarcode.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtBarcode.Name = "txtBarcode"
-        Me.txtBarcode.Size = New System.Drawing.Size(146, 24)
+        Me.txtBarcode.Size = New System.Drawing.Size(193, 28)
         Me.txtBarcode.TabIndex = 2
         Me.txtBarcode.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -902,9 +946,10 @@ Partial Class frmPOS
         Me.btnListReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnListReset.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnListReset.ForeColor = System.Drawing.Color.OrangeRed
-        Me.btnListReset.Location = New System.Drawing.Point(931, 19)
+        Me.btnListReset.Location = New System.Drawing.Point(1241, 23)
+        Me.btnListReset.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnListReset.Name = "btnListReset"
-        Me.btnListReset.Size = New System.Drawing.Size(87, 26)
+        Me.btnListReset.Size = New System.Drawing.Size(116, 32)
         Me.btnListReset.TabIndex = 12
         Me.btnListReset.Text = "Reset"
         Me.btnListReset.UseVisualStyleBackColor = False
@@ -916,9 +961,10 @@ Partial Class frmPOS
         Me.btnListUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnListUpdate.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnListUpdate.ForeColor = System.Drawing.Color.OrangeRed
-        Me.btnListUpdate.Location = New System.Drawing.Point(931, 108)
+        Me.btnListUpdate.Location = New System.Drawing.Point(1241, 133)
+        Me.btnListUpdate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnListUpdate.Name = "btnListUpdate"
-        Me.btnListUpdate.Size = New System.Drawing.Size(87, 26)
+        Me.btnListUpdate.Size = New System.Drawing.Size(116, 32)
         Me.btnListUpdate.TabIndex = 15
         Me.btnListUpdate.Text = "Update"
         Me.btnListUpdate.UseVisualStyleBackColor = False
@@ -931,9 +977,10 @@ Partial Class frmPOS
         Me.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRemove.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRemove.ForeColor = System.Drawing.Color.OrangeRed
-        Me.btnRemove.Location = New System.Drawing.Point(931, 78)
+        Me.btnRemove.Location = New System.Drawing.Point(1241, 96)
+        Me.btnRemove.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnRemove.Name = "btnRemove"
-        Me.btnRemove.Size = New System.Drawing.Size(87, 26)
+        Me.btnRemove.Size = New System.Drawing.Size(116, 32)
         Me.btnRemove.TabIndex = 14
         Me.btnRemove.Text = "Remove"
         Me.btnRemove.UseVisualStyleBackColor = False
@@ -942,19 +989,21 @@ Partial Class frmPOS
         '
         Me.btnSelectionInv.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnSelectionInv.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSelectionInv.Location = New System.Drawing.Point(209, 21)
+        Me.btnSelectionInv.Location = New System.Drawing.Point(279, 26)
+        Me.btnSelectionInv.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSelectionInv.Name = "btnSelectionInv"
-        Me.btnSelectionInv.Size = New System.Drawing.Size(29, 19)
+        Me.btnSelectionInv.Size = New System.Drawing.Size(39, 23)
         Me.btnSelectionInv.TabIndex = 11
         Me.btnSelectionInv.Text = "..."
         Me.btnSelectionInv.UseVisualStyleBackColor = True
         '
         'txtTotalAmount
         '
-        Me.txtTotalAmount.Location = New System.Drawing.Point(108, 127)
+        Me.txtTotalAmount.Location = New System.Drawing.Point(144, 156)
+        Me.txtTotalAmount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTotalAmount.Name = "txtTotalAmount"
         Me.txtTotalAmount.ReadOnly = True
-        Me.txtTotalAmount.Size = New System.Drawing.Size(84, 24)
+        Me.txtTotalAmount.Size = New System.Drawing.Size(111, 28)
         Me.txtTotalAmount.TabIndex = 10
         Me.txtTotalAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -962,28 +1011,31 @@ Partial Class frmPOS
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(7, 47)
+        Me.Label24.Location = New System.Drawing.Point(9, 58)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(62, 17)
+        Me.Label24.Size = New System.Drawing.Size(83, 21)
         Me.Label24.TabIndex = 324
         Me.Label24.Text = "Quantity :"
         '
         'txtQty
         '
         Me.txtQty.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtQty.Location = New System.Drawing.Point(108, 47)
+        Me.txtQty.Location = New System.Drawing.Point(144, 58)
+        Me.txtQty.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtQty.Name = "txtQty"
-        Me.txtQty.Size = New System.Drawing.Size(84, 24)
+        Me.txtQty.Size = New System.Drawing.Size(111, 28)
         Me.txtQty.TabIndex = 4
         Me.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtProductName
         '
         Me.txtProductName.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProductName.Location = New System.Drawing.Point(342, 20)
+        Me.txtProductName.Location = New System.Drawing.Point(456, 25)
+        Me.txtProductName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtProductName.Name = "txtProductName"
         Me.txtProductName.ReadOnly = True
-        Me.txtProductName.Size = New System.Drawing.Size(206, 24)
+        Me.txtProductName.Size = New System.Drawing.Size(273, 28)
         Me.txtProductName.TabIndex = 1
         '
         'btnAdd
@@ -993,9 +1045,10 @@ Partial Class frmPOS
         Me.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAdd.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdd.ForeColor = System.Drawing.Color.OrangeRed
-        Me.btnAdd.Location = New System.Drawing.Point(931, 48)
+        Me.btnAdd.Location = New System.Drawing.Point(1241, 59)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(87, 26)
+        Me.btnAdd.Size = New System.Drawing.Size(116, 32)
         Me.btnAdd.TabIndex = 13
         Me.btnAdd.Text = "&Add To Cart"
         Me.btnAdd.UseVisualStyleBackColor = False
@@ -1004,37 +1057,41 @@ Partial Class frmPOS
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(257, 24)
+        Me.Label23.Location = New System.Drawing.Point(343, 30)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(93, 17)
+        Me.Label23.Size = New System.Drawing.Size(118, 21)
         Me.Label23.TabIndex = 321
         Me.Label23.Text = "Product Name :"
         '
         'txtProductCode
         '
         Me.txtProductCode.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProductCode.Location = New System.Drawing.Point(108, 21)
+        Me.txtProductCode.Location = New System.Drawing.Point(144, 26)
+        Me.txtProductCode.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtProductCode.Name = "txtProductCode"
         Me.txtProductCode.ReadOnly = True
-        Me.txtProductCode.Size = New System.Drawing.Size(84, 24)
+        Me.txtProductCode.Size = New System.Drawing.Size(111, 28)
         Me.txtProductCode.TabIndex = 0
         '
         'txtDiscountPer
         '
         Me.txtDiscountPer.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDiscountPer.Location = New System.Drawing.Point(108, 74)
+        Me.txtDiscountPer.Location = New System.Drawing.Point(144, 91)
+        Me.txtDiscountPer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDiscountPer.Name = "txtDiscountPer"
-        Me.txtDiscountPer.Size = New System.Drawing.Size(84, 24)
+        Me.txtDiscountPer.Size = New System.Drawing.Size(111, 28)
         Me.txtDiscountPer.TabIndex = 6
         Me.txtDiscountPer.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtVATAmount
         '
         Me.txtVATAmount.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtVATAmount.Location = New System.Drawing.Point(233, 102)
+        Me.txtVATAmount.Location = New System.Drawing.Point(311, 126)
+        Me.txtVATAmount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtVATAmount.Name = "txtVATAmount"
         Me.txtVATAmount.ReadOnly = True
-        Me.txtVATAmount.Size = New System.Drawing.Size(84, 24)
+        Me.txtVATAmount.Size = New System.Drawing.Size(111, 28)
         Me.txtVATAmount.TabIndex = 9
         Me.txtVATAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1042,9 +1099,10 @@ Partial Class frmPOS
         '
         Me.Label58.AutoSize = True
         Me.Label58.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label58.Location = New System.Drawing.Point(207, 102)
+        Me.Label58.Location = New System.Drawing.Point(276, 126)
+        Me.Label58.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label58.Name = "Label58"
-        Me.Label58.Size = New System.Drawing.Size(19, 17)
+        Me.Label58.Size = New System.Drawing.Size(23, 21)
         Me.Label58.TabIndex = 317
         Me.Label58.Text = "%"
         '
@@ -1052,19 +1110,21 @@ Partial Class frmPOS
         '
         Me.lblUnit.AutoSize = True
         Me.lblUnit.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUnit.Location = New System.Drawing.Point(206, 50)
+        Me.lblUnit.Location = New System.Drawing.Point(275, 62)
+        Me.lblUnit.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblUnit.Name = "lblUnit"
-        Me.lblUnit.Size = New System.Drawing.Size(31, 17)
+        Me.lblUnit.Size = New System.Drawing.Size(42, 21)
         Me.lblUnit.TabIndex = 96
         Me.lblUnit.Text = "Unit"
         '
         'txtMargin
         '
         Me.txtMargin.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtMargin.Location = New System.Drawing.Point(496, 117)
+        Me.txtMargin.Location = New System.Drawing.Point(661, 144)
+        Me.txtMargin.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtMargin.Name = "txtMargin"
         Me.txtMargin.ReadOnly = True
-        Me.txtMargin.Size = New System.Drawing.Size(84, 20)
+        Me.txtMargin.Size = New System.Drawing.Size(111, 23)
         Me.txtMargin.TabIndex = 4
         Me.txtMargin.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.txtMargin.Visible = False
@@ -1073,9 +1133,10 @@ Partial Class frmPOS
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(779, 24)
+        Me.Label21.Location = New System.Drawing.Point(1039, 30)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(41, 17)
+        Me.Label21.Size = New System.Drawing.Size(53, 21)
         Me.Label21.TabIndex = 87
         Me.Label21.Text = "Price :"
         '
@@ -1083,19 +1144,21 @@ Partial Class frmPOS
         '
         Me.Label56.AutoSize = True
         Me.Label56.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label56.Location = New System.Drawing.Point(207, 74)
+        Me.Label56.Location = New System.Drawing.Point(276, 91)
+        Me.Label56.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label56.Name = "Label56"
-        Me.Label56.Size = New System.Drawing.Size(19, 17)
+        Me.Label56.Size = New System.Drawing.Size(23, 21)
         Me.Label56.TabIndex = 316
         Me.Label56.Text = "%"
         '
         'txtCostPrice
         '
         Me.txtCostPrice.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCostPrice.Location = New System.Drawing.Point(496, 91)
+        Me.txtCostPrice.Location = New System.Drawing.Point(661, 112)
+        Me.txtCostPrice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCostPrice.Name = "txtCostPrice"
         Me.txtCostPrice.ReadOnly = True
-        Me.txtCostPrice.Size = New System.Drawing.Size(84, 24)
+        Me.txtCostPrice.Size = New System.Drawing.Size(111, 28)
         Me.txtCostPrice.TabIndex = 2
         Me.txtCostPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.txtCostPrice.Visible = False
@@ -1103,29 +1166,32 @@ Partial Class frmPOS
         'txtDiscountAmount
         '
         Me.txtDiscountAmount.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtDiscountAmount.Location = New System.Drawing.Point(233, 74)
+        Me.txtDiscountAmount.Location = New System.Drawing.Point(311, 91)
+        Me.txtDiscountAmount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtDiscountAmount.Name = "txtDiscountAmount"
         Me.txtDiscountAmount.ReadOnly = True
-        Me.txtDiscountAmount.Size = New System.Drawing.Size(84, 24)
+        Me.txtDiscountAmount.Size = New System.Drawing.Size(111, 28)
         Me.txtDiscountAmount.TabIndex = 7
         Me.txtDiscountAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtAmount
         '
         Me.txtAmount.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtAmount.Location = New System.Drawing.Point(342, 46)
+        Me.txtAmount.Location = New System.Drawing.Point(456, 57)
+        Me.txtAmount.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtAmount.Name = "txtAmount"
         Me.txtAmount.ReadOnly = True
-        Me.txtAmount.Size = New System.Drawing.Size(84, 24)
+        Me.txtAmount.Size = New System.Drawing.Size(111, 28)
         Me.txtAmount.TabIndex = 5
         Me.txtAmount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'txtVAT
         '
         Me.txtVAT.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtVAT.Location = New System.Drawing.Point(108, 101)
+        Me.txtVAT.Location = New System.Drawing.Point(144, 124)
+        Me.txtVAT.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtVAT.Name = "txtVAT"
-        Me.txtVAT.Size = New System.Drawing.Size(84, 24)
+        Me.txtVAT.Size = New System.Drawing.Size(111, 28)
         Me.txtVAT.TabIndex = 8
         Me.txtVAT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1133,18 +1199,20 @@ Partial Class frmPOS
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(7, 21)
+        Me.Label11.Location = New System.Drawing.Point(9, 26)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(89, 17)
+        Me.Label11.Size = New System.Drawing.Size(112, 21)
         Me.Label11.TabIndex = 95
         Me.Label11.Text = "Product Code :"
         '
         'txtSellingPrice
         '
         Me.txtSellingPrice.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSellingPrice.Location = New System.Drawing.Point(822, 19)
+        Me.txtSellingPrice.Location = New System.Drawing.Point(1096, 23)
+        Me.txtSellingPrice.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSellingPrice.Name = "txtSellingPrice"
-        Me.txtSellingPrice.Size = New System.Drawing.Size(84, 24)
+        Me.txtSellingPrice.Size = New System.Drawing.Size(111, 28)
         Me.txtSellingPrice.TabIndex = 3
         Me.txtSellingPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
@@ -1158,43 +1226,49 @@ Partial Class frmPOS
         Me.GroupBox3.Controls.Add(Me.txtCustomerID)
         Me.GroupBox3.Controls.Add(Me.txtCustomerName)
         Me.GroupBox3.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox3.Location = New System.Drawing.Point(9, 183)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 225)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(308, 104)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Size = New System.Drawing.Size(411, 128)
         Me.GroupBox3.TabIndex = 1
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Customer Details"
         '
         'txtContactNo
         '
-        Me.txtContactNo.Location = New System.Drawing.Point(115, 74)
+        Me.txtContactNo.Location = New System.Drawing.Point(153, 91)
+        Me.txtContactNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtContactNo.Name = "txtContactNo"
-        Me.txtContactNo.Size = New System.Drawing.Size(143, 24)
+        Me.txtContactNo.Size = New System.Drawing.Size(189, 28)
         Me.txtContactNo.TabIndex = 2
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(6, 73)
+        Me.Label9.Location = New System.Drawing.Point(8, 90)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(79, 17)
+        Me.Label9.Size = New System.Drawing.Size(101, 21)
         Me.Label9.TabIndex = 8
         Me.Label9.Text = "Contact No. :"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 49)
+        Me.Label2.Location = New System.Drawing.Point(8, 60)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(104, 17)
+        Me.Label2.Size = New System.Drawing.Size(131, 21)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Customer Name :"
         '
         'btnSelect
         '
-        Me.btnSelect.Location = New System.Drawing.Point(195, 21)
+        Me.btnSelect.Location = New System.Drawing.Point(260, 26)
+        Me.btnSelect.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSelect.Name = "btnSelect"
-        Me.btnSelect.Size = New System.Drawing.Size(29, 21)
+        Me.btnSelect.Size = New System.Drawing.Size(39, 26)
         Me.btnSelect.TabIndex = 3
         Me.btnSelect.Text = "..."
         Me.btnSelect.UseVisualStyleBackColor = True
@@ -1202,9 +1276,10 @@ Partial Class frmPOS
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 22)
+        Me.Label3.Location = New System.Drawing.Point(8, 27)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 17)
+        Me.Label3.Size = New System.Drawing.Size(108, 21)
         Me.Label3.TabIndex = 0
         Me.Label3.Text = "Customer ID :"
         '
@@ -1212,17 +1287,19 @@ Partial Class frmPOS
         '
         Me.txtCustomerID.BackColor = System.Drawing.SystemColors.Control
         Me.txtCustomerID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCustomerID.Location = New System.Drawing.Point(115, 21)
+        Me.txtCustomerID.Location = New System.Drawing.Point(153, 26)
+        Me.txtCustomerID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCustomerID.Name = "txtCustomerID"
         Me.txtCustomerID.ReadOnly = True
-        Me.txtCustomerID.Size = New System.Drawing.Size(70, 21)
+        Me.txtCustomerID.Size = New System.Drawing.Size(92, 24)
         Me.txtCustomerID.TabIndex = 0
         '
         'txtCustomerName
         '
-        Me.txtCustomerName.Location = New System.Drawing.Point(115, 46)
+        Me.txtCustomerName.Location = New System.Drawing.Point(153, 57)
+        Me.txtCustomerName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCustomerName.Name = "txtCustomerName"
-        Me.txtCustomerName.Size = New System.Drawing.Size(177, 24)
+        Me.txtCustomerName.Size = New System.Drawing.Size(235, 28)
         Me.txtCustomerName.TabIndex = 1
         '
         'GroupBox4
@@ -1237,55 +1314,58 @@ Partial Class frmPOS
         Me.GroupBox4.Controls.Add(Me.Label4)
         Me.GroupBox4.Controls.Add(Label5)
         Me.GroupBox4.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox4.Location = New System.Drawing.Point(7, 50)
+        Me.GroupBox4.Location = New System.Drawing.Point(9, 62)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(308, 127)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox4.Size = New System.Drawing.Size(411, 156)
         Me.GroupBox4.TabIndex = 0
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Invoice Info"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(216, 73)
+        Me.Button1.Location = New System.Drawing.Point(288, 90)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(29, 21)
+        Me.Button1.Size = New System.Drawing.Size(39, 26)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "..."
         Me.Button1.UseVisualStyleBackColor = True
         '
         'txtSalesman
         '
-        Me.txtSalesman.Location = New System.Drawing.Point(102, 99)
+        Me.txtSalesman.Location = New System.Drawing.Point(136, 122)
+        Me.txtSalesman.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSalesman.Name = "txtSalesman"
         Me.txtSalesman.ReadOnly = True
-        Me.txtSalesman.Size = New System.Drawing.Size(177, 24)
+        Me.txtSalesman.Size = New System.Drawing.Size(235, 28)
         Me.txtSalesman.TabIndex = 4
         '
         'txtSalesmanID
         '
-        Me.txtSalesmanID.Location = New System.Drawing.Point(102, 72)
+        Me.txtSalesmanID.Location = New System.Drawing.Point(136, 89)
+        Me.txtSalesmanID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSalesmanID.Name = "txtSalesmanID"
         Me.txtSalesmanID.ReadOnly = True
-        Me.txtSalesmanID.Size = New System.Drawing.Size(111, 24)
+        Me.txtSalesmanID.Size = New System.Drawing.Size(147, 28)
         Me.txtSalesmanID.TabIndex = 3
         '
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(9, 99)
-        Me.Label15.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label15.Location = New System.Drawing.Point(12, 122)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(65, 17)
+        Me.Label15.Size = New System.Drawing.Size(85, 21)
         Me.Label15.TabIndex = 337
         Me.Label15.Text = "Salesman :"
         '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(9, 74)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label14.Location = New System.Drawing.Point(12, 91)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(83, 17)
+        Me.Label14.Size = New System.Drawing.Size(107, 21)
         Me.Label14.TabIndex = 336
         Me.Label14.Text = "Salesman ID :"
         '
@@ -1293,27 +1373,27 @@ Partial Class frmPOS
         '
         Me.dtpInvoiceDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpInvoiceDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpInvoiceDate.Location = New System.Drawing.Point(102, 45)
-        Me.dtpInvoiceDate.Margin = New System.Windows.Forms.Padding(2)
+        Me.dtpInvoiceDate.Location = New System.Drawing.Point(136, 55)
+        Me.dtpInvoiceDate.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dtpInvoiceDate.Name = "dtpInvoiceDate"
-        Me.dtpInvoiceDate.Size = New System.Drawing.Size(111, 24)
+        Me.dtpInvoiceDate.Size = New System.Drawing.Size(147, 28)
         Me.dtpInvoiceDate.TabIndex = 1
         '
         'txtInvoiceNo
         '
-        Me.txtInvoiceNo.Location = New System.Drawing.Point(102, 17)
+        Me.txtInvoiceNo.Location = New System.Drawing.Point(136, 21)
+        Me.txtInvoiceNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtInvoiceNo.Name = "txtInvoiceNo"
         Me.txtInvoiceNo.ReadOnly = True
-        Me.txtInvoiceNo.Size = New System.Drawing.Size(111, 24)
+        Me.txtInvoiceNo.Size = New System.Drawing.Size(147, 28)
         Me.txtInvoiceNo.TabIndex = 0
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(9, 44)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label4.Location = New System.Drawing.Point(12, 54)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(83, 17)
+        Me.Label4.Size = New System.Drawing.Size(106, 21)
         Me.Label4.TabIndex = 335
         Me.Label4.Text = "Invoice Date :"
         '
@@ -1327,9 +1407,10 @@ Partial Class frmPOS
         Me.Panel3.Controls.Add(Me.btnUpdate)
         Me.Panel3.Controls.Add(Me.btnSave)
         Me.Panel3.Controls.Add(Me.btnNew)
-        Me.Panel3.Location = New System.Drawing.Point(1046, 54)
+        Me.Panel3.Location = New System.Drawing.Point(1395, 66)
+        Me.Panel3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(117, 219)
+        Me.Panel3.Size = New System.Drawing.Size(155, 269)
         Me.Panel3.TabIndex = 3
         '
         'btnPrint
@@ -1340,9 +1421,10 @@ Partial Class frmPOS
         Me.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnPrint.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrint.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnPrint.Location = New System.Drawing.Point(11, 178)
+        Me.btnPrint.Location = New System.Drawing.Point(15, 219)
+        Me.btnPrint.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnPrint.Name = "btnPrint"
-        Me.btnPrint.Size = New System.Drawing.Size(87, 30)
+        Me.btnPrint.Size = New System.Drawing.Size(116, 37)
         Me.btnPrint.TabIndex = 6
         Me.btnPrint.Text = "&Print"
         Me.btnPrint.UseVisualStyleBackColor = False
@@ -1354,9 +1436,10 @@ Partial Class frmPOS
         Me.btnGetData.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnGetData.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnGetData.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnGetData.Location = New System.Drawing.Point(11, 145)
+        Me.btnGetData.Location = New System.Drawing.Point(15, 178)
+        Me.btnGetData.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnGetData.Name = "btnGetData"
-        Me.btnGetData.Size = New System.Drawing.Size(87, 30)
+        Me.btnGetData.Size = New System.Drawing.Size(116, 37)
         Me.btnGetData.TabIndex = 5
         Me.btnGetData.Text = "&Get Data"
         Me.btnGetData.UseVisualStyleBackColor = False
@@ -1368,9 +1451,10 @@ Partial Class frmPOS
         Me.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDelete.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnDelete.Location = New System.Drawing.Point(11, 112)
+        Me.btnDelete.Location = New System.Drawing.Point(15, 138)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(87, 30)
+        Me.btnDelete.Size = New System.Drawing.Size(116, 37)
         Me.btnDelete.TabIndex = 3
         Me.btnDelete.Text = "&Delete"
         Me.btnDelete.UseVisualStyleBackColor = False
@@ -1382,9 +1466,10 @@ Partial Class frmPOS
         Me.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnUpdate.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdate.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnUpdate.Location = New System.Drawing.Point(11, 78)
+        Me.btnUpdate.Location = New System.Drawing.Point(15, 96)
+        Me.btnUpdate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnUpdate.Name = "btnUpdate"
-        Me.btnUpdate.Size = New System.Drawing.Size(87, 30)
+        Me.btnUpdate.Size = New System.Drawing.Size(116, 37)
         Me.btnUpdate.TabIndex = 2
         Me.btnUpdate.Text = "&Update"
         Me.btnUpdate.UseVisualStyleBackColor = False
@@ -1396,11 +1481,12 @@ Partial Class frmPOS
         Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSave.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSave.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnSave.Location = New System.Drawing.Point(11, 43)
+        Me.btnSave.Location = New System.Drawing.Point(15, 53)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnSave.Name = "btnSave"
-        Me.btnSave.Size = New System.Drawing.Size(87, 30)
+        Me.btnSave.Size = New System.Drawing.Size(116, 37)
         Me.btnSave.TabIndex = 1
-        Me.btnSave.Text = "&Save + Print"
+        Me.btnSave.Text = "&Save"
         Me.btnSave.UseVisualStyleBackColor = False
         '
         'btnNew
@@ -1410,9 +1496,10 @@ Partial Class frmPOS
         Me.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNew.Font = New System.Drawing.Font("Palatino Linotype", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNew.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.btnNew.Location = New System.Drawing.Point(10, 10)
+        Me.btnNew.Location = New System.Drawing.Point(13, 12)
+        Me.btnNew.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnNew.Name = "btnNew"
-        Me.btnNew.Size = New System.Drawing.Size(87, 30)
+        Me.btnNew.Size = New System.Drawing.Size(116, 37)
         Me.btnNew.TabIndex = 0
         Me.btnNew.Text = "&New"
         Me.btnNew.UseVisualStyleBackColor = False
@@ -1435,9 +1522,10 @@ Partial Class frmPOS
         Me.Panel2.Controls.Add(Me.txtSM_ID)
         Me.Panel2.Controls.Add(Me.lblSet)
         Me.Panel2.Controls.Add(Me.txtCommissionPer)
-        Me.Panel2.Location = New System.Drawing.Point(7, 4)
+        Me.Panel2.Location = New System.Drawing.Point(9, 5)
+        Me.Panel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1012, 45)
+        Me.Panel2.Size = New System.Drawing.Size(1349, 55)
         Me.Panel2.TabIndex = 0
         '
         'lblDateTime
@@ -1446,9 +1534,10 @@ Partial Class frmPOS
         Me.lblDateTime.AutoSize = True
         Me.lblDateTime.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDateTime.ForeColor = System.Drawing.Color.White
-        Me.lblDateTime.Location = New System.Drawing.Point(560, 4)
+        Me.lblDateTime.Location = New System.Drawing.Point(747, 5)
+        Me.lblDateTime.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblDateTime.Name = "lblDateTime"
-        Me.lblDateTime.Size = New System.Drawing.Size(120, 32)
+        Me.lblDateTime.Size = New System.Drawing.Size(151, 41)
         Me.lblDateTime.TabIndex = 319
         Me.lblDateTime.Text = "DateTime"
         Me.lblDateTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1458,9 +1547,10 @@ Partial Class frmPOS
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Palatino Linotype", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label1.Location = New System.Drawing.Point(523, 4)
+        Me.Label1.Location = New System.Drawing.Point(697, 5)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(158, 32)
+        Me.Label1.Size = New System.Drawing.Size(195, 41)
         Me.Label1.TabIndex = 319
         Me.Label1.Text = "Sales Invoice"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1468,9 +1558,10 @@ Partial Class frmPOS
         'lblUserType
         '
         Me.lblUserType.AutoSize = True
-        Me.lblUserType.Location = New System.Drawing.Point(604, 17)
+        Me.lblUserType.Location = New System.Drawing.Point(805, 21)
+        Me.lblUserType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblUserType.Name = "lblUserType"
-        Me.lblUserType.Size = New System.Drawing.Size(56, 13)
+        Me.lblUserType.Size = New System.Drawing.Size(74, 17)
         Me.lblUserType.TabIndex = 315
         Me.lblUserType.Text = "User Type"
         Me.lblUserType.Visible = False
@@ -1478,9 +1569,10 @@ Partial Class frmPOS
         'lblUser
         '
         Me.lblUser.AutoSize = True
-        Me.lblUser.Location = New System.Drawing.Point(626, 17)
+        Me.lblUser.Location = New System.Drawing.Point(835, 21)
+        Me.lblUser.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblUser.Name = "lblUser"
-        Me.lblUser.Size = New System.Drawing.Size(29, 13)
+        Me.lblUser.Size = New System.Drawing.Size(38, 17)
         Me.lblUser.TabIndex = 313
         Me.lblUser.Text = "User"
         Me.lblUser.Visible = False
@@ -1489,10 +1581,11 @@ Partial Class frmPOS
         '
         Me.txtCID.BackColor = System.Drawing.SystemColors.Control
         Me.txtCID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCID.Location = New System.Drawing.Point(543, 12)
+        Me.txtCID.Location = New System.Drawing.Point(724, 15)
+        Me.txtCID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCID.Name = "txtCID"
         Me.txtCID.ReadOnly = True
-        Me.txtCID.Size = New System.Drawing.Size(70, 21)
+        Me.txtCID.Size = New System.Drawing.Size(92, 24)
         Me.txtCID.TabIndex = 7
         Me.txtCID.Visible = False
         '
@@ -1500,18 +1593,20 @@ Partial Class frmPOS
         '
         Me.txtProductID.BackColor = System.Drawing.SystemColors.Control
         Me.txtProductID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtProductID.Location = New System.Drawing.Point(549, 12)
+        Me.txtProductID.Location = New System.Drawing.Point(732, 15)
+        Me.txtProductID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtProductID.Name = "txtProductID"
         Me.txtProductID.ReadOnly = True
-        Me.txtProductID.Size = New System.Drawing.Size(70, 21)
+        Me.txtProductID.Size = New System.Drawing.Size(92, 24)
         Me.txtProductID.TabIndex = 316
         Me.txtProductID.Visible = False
         '
         'txtCustomerType
         '
-        Me.txtCustomerType.Location = New System.Drawing.Point(543, 11)
+        Me.txtCustomerType.Location = New System.Drawing.Point(724, 14)
+        Me.txtCustomerType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCustomerType.Name = "txtCustomerType"
-        Me.txtCustomerType.Size = New System.Drawing.Size(100, 20)
+        Me.txtCustomerType.Size = New System.Drawing.Size(132, 22)
         Me.txtCustomerType.TabIndex = 87
         Me.txtCustomerType.Visible = False
         '
@@ -1519,10 +1614,11 @@ Partial Class frmPOS
         '
         Me.txtID.BackColor = System.Drawing.SystemColors.Control
         Me.txtID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtID.Location = New System.Drawing.Point(578, 8)
+        Me.txtID.Location = New System.Drawing.Point(771, 10)
+        Me.txtID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtID.Name = "txtID"
         Me.txtID.ReadOnly = True
-        Me.txtID.Size = New System.Drawing.Size(70, 21)
+        Me.txtID.Size = New System.Drawing.Size(92, 24)
         Me.txtID.TabIndex = 12
         Me.txtID.Visible = False
         '
@@ -1530,10 +1626,11 @@ Partial Class frmPOS
         '
         Me.txtTotalQty.BackColor = System.Drawing.SystemColors.Control
         Me.txtTotalQty.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtTotalQty.Location = New System.Drawing.Point(553, 4)
+        Me.txtTotalQty.Location = New System.Drawing.Point(737, 5)
+        Me.txtTotalQty.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtTotalQty.Name = "txtTotalQty"
         Me.txtTotalQty.ReadOnly = True
-        Me.txtTotalQty.Size = New System.Drawing.Size(70, 21)
+        Me.txtTotalQty.Size = New System.Drawing.Size(92, 24)
         Me.txtTotalQty.TabIndex = 8
         Me.txtTotalQty.Visible = False
         '
@@ -1541,28 +1638,31 @@ Partial Class frmPOS
         '
         Me.txtSM_ID.BackColor = System.Drawing.SystemColors.Control
         Me.txtSM_ID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSM_ID.Location = New System.Drawing.Point(543, 9)
+        Me.txtSM_ID.Location = New System.Drawing.Point(724, 11)
+        Me.txtSM_ID.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtSM_ID.Name = "txtSM_ID"
         Me.txtSM_ID.ReadOnly = True
-        Me.txtSM_ID.Size = New System.Drawing.Size(70, 21)
+        Me.txtSM_ID.Size = New System.Drawing.Size(92, 24)
         Me.txtSM_ID.TabIndex = 317
         Me.txtSM_ID.Visible = False
         '
         'lblSet
         '
         Me.lblSet.AutoSize = True
-        Me.lblSet.Location = New System.Drawing.Point(626, 17)
+        Me.lblSet.Location = New System.Drawing.Point(835, 21)
+        Me.lblSet.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblSet.Name = "lblSet"
-        Me.lblSet.Size = New System.Drawing.Size(23, 13)
+        Me.lblSet.Size = New System.Drawing.Size(29, 17)
         Me.lblSet.TabIndex = 314
         Me.lblSet.Text = "Set"
         Me.lblSet.Visible = False
         '
         'txtCommissionPer
         '
-        Me.txtCommissionPer.Location = New System.Drawing.Point(549, 10)
+        Me.txtCommissionPer.Location = New System.Drawing.Point(732, 12)
+        Me.txtCommissionPer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtCommissionPer.Name = "txtCommissionPer"
-        Me.txtCommissionPer.Size = New System.Drawing.Size(100, 20)
+        Me.txtCommissionPer.Size = New System.Drawing.Size(132, 22)
         Me.txtCommissionPer.TabIndex = 318
         Me.txtCommissionPer.Visible = False
         '
@@ -1575,13 +1675,14 @@ Partial Class frmPOS
         '
         'frmPOS
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1184, 663)
+        Me.ClientSize = New System.Drawing.Size(1579, 816)
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmPOS"

@@ -4,7 +4,9 @@ Imports System.IO
 Public Class frmCompany
 
     Sub Reset()
-        txtSTNo.Text = ""
+        txtShopNumber.Text = ""
+        txtShopOwner.Text = ""
+        txtLicenseNumber.Text = ""
         txtTIN.Text = ""
         txtEmailID.Text = ""
         txtContactNo.Text = ""
@@ -22,6 +24,16 @@ Public Class frmCompany
     End Sub
 
     Private Sub btnSave_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSave.Click
+        If txtShopNumber.Text = "" Then
+            MessageBox.Show("Please enter Shop Number name", "", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            txtShopNumber.Focus()
+            Return
+        End If
+        If txtShopOwner.Text = "" Then
+            MessageBox.Show("Please enter Shop Owner Name", "", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            txtShopOwner.Focus()
+            Return
+        End If
         If txtCompanyName.Text = "" Then
             MessageBox.Show("Please enter company name", "", MessageBoxButtons.OK, MessageBoxIcon.Warning)
             txtCompanyName.Focus()
@@ -46,8 +58,10 @@ Public Class frmCompany
         Try
             con = New SqlConnection(cs)
             con.Open()
-            Dim ct As String = "select count(*) from company Having count(*) >= 1"
+            'Dim ct As String = "select count(*) from company Having count(*) >= 1"
+            Dim ct As String = "select ShopID from company where ShopID= @d1"
             cmd = New SqlCommand(ct)
+            cmd.Parameters.AddWithValue("@d1", txtShopNumber.Text)
             cmd.Connection = con
             rdr = cmd.ExecuteReader()
             If rdr.Read Then
@@ -60,21 +74,23 @@ Public Class frmCompany
             con = New SqlConnection(cs)
             con.Open()
 
-            Dim cb As String = "insert into company(companyName, Address, ContactNo, EmailID, TIN, STNo, CIN, Logo) VALUES (@d1,@d2,@d3,@d4,@d5,@d6,@d7,@d8)"
+            Dim cb As String = "insert into company(ShopID,CompanyOwner,companyName, Address, ContactNo, EmailID, TIN, LicenseNumber, CIN, Logo) VALUES (@d1,@d2,@d3,@d4,@d5,@d6,@d7,@d8,@d9,@d10)"
             cmd = New SqlCommand(cb)
             cmd.Connection = con
-            cmd.Parameters.AddWithValue("@d1", txtCompanyName.Text)
-            cmd.Parameters.AddWithValue("@d2", txtAddress.Text)
-            cmd.Parameters.AddWithValue("@d3", txtContactNo.Text)
-            cmd.Parameters.AddWithValue("@d4", txtEmailID.Text)
-            cmd.Parameters.AddWithValue("@d5", txtTIN.Text)
-            cmd.Parameters.AddWithValue("@d6", txtSTNo.Text)
-            cmd.Parameters.AddWithValue("@d7", txtCIN.Text)
+            cmd.Parameters.AddWithValue("@d1", Convert.ToInt32(txtShopNumber.Text))
+            cmd.Parameters.AddWithValue("@d2", txtShopOwner.Text)
+            cmd.Parameters.AddWithValue("@d3", txtCompanyName.Text)
+            cmd.Parameters.AddWithValue("@d4", txtAddress.Text)
+            cmd.Parameters.AddWithValue("@d5", txtContactNo.Text)
+            cmd.Parameters.AddWithValue("@d6", txtEmailID.Text)
+            cmd.Parameters.AddWithValue("@d7", txtTIN.Text)
+            cmd.Parameters.AddWithValue("@d8", txtLicenseNumber.Text)
+            cmd.Parameters.AddWithValue("@d9", txtCIN.Text)
             Dim ms As New MemoryStream()
             Dim bmpImage As New Bitmap(PictureBox1.Image)
             bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
             Dim data As Byte() = ms.GetBuffer()
-            Dim p As New SqlParameter("@d8", SqlDbType.Image)
+            Dim p As New SqlParameter("@d10", SqlDbType.Image)
             p.Value = data
             cmd.Parameters.Add(p)
             cmd.ExecuteNonQuery()
@@ -116,7 +132,7 @@ Public Class frmCompany
 
             con = New SqlConnection(cs)
             con.Open()
-            Dim cb As String = "Update company set companyName=@d1, Address=@d2, ContactNo=@d3, EmailID=@d4, TIN=@d5, STNo=@d6, CIN=@d7, Logo=@d8 where ID=" & txtID.Text & ""
+            Dim cb As String = "Update company set companyName=@d1, Address=@d2, ContactNo=@d3, EmailID=@d4, TIN=@d5, LicenseNumber=@d6, CIN=@d7, Logo=@d8 where ID=" & txtID.Text & ""
             cmd = New SqlCommand(cb)
             cmd.Connection = con
             cmd.Parameters.AddWithValue("@d1", txtCompanyName.Text)
@@ -124,7 +140,7 @@ Public Class frmCompany
             cmd.Parameters.AddWithValue("@d3", txtContactNo.Text)
             cmd.Parameters.AddWithValue("@d4", txtEmailID.Text)
             cmd.Parameters.AddWithValue("@d5", txtTIN.Text)
-            cmd.Parameters.AddWithValue("@d6", txtSTNo.Text)
+            cmd.Parameters.AddWithValue("@d6", txtLicenseNumber.Text)
             cmd.Parameters.AddWithValue("@d7", txtCIN.Text)
             Dim ms As New MemoryStream()
             Dim bmpImage As New Bitmap(PictureBox1.Image)
@@ -148,11 +164,11 @@ Public Class frmCompany
         Try
             con = New SqlConnection(cs)
             con.Open()
-            cmd = New SqlCommand("SELECT RTRIM(ID), RTRIM(companyName), RTRIM(Address), RTRIM(ContactNo), RTRIM(EmailID), RTRIM(TIN), RTRIM(STNo), RTRIM(CIN), Logo from company", con)
+            cmd = New SqlCommand("SELECT RTRIM(ID), RTRIM(ShopID),RTRIM(CompanyOwner),RTRIM(companyName), RTRIM(Address), RTRIM(ContactNo), RTRIM(EmailID), RTRIM(TIN), RTRIM(LicenseNumber), RTRIM(CIN), Logo from company", con)
             rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection)
             dgw.Rows.Clear()
             While (rdr.Read() = True)
-                dgw.Rows.Add(rdr(0), rdr(1), rdr(2), rdr(3), rdr(4), rdr(5), rdr(6), rdr(7), rdr(8))
+                dgw.Rows.Add(rdr(0), rdr(1), rdr(2), rdr(3), rdr(4), rdr(5), rdr(6), rdr(7), rdr(8), rdr(9), rdr(10))
             End While
             con.Close()
         Catch ex As Exception
@@ -176,6 +192,8 @@ Public Class frmCompany
     End Sub
 
     Private Sub frmRegistration_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'SIS_DBDataSet.Company' table. You can move, or remove it, as needed.
+        Me.CompanyTableAdapter.Fill(Me.SIS_DBDataSet.Company)
         Getdata()
     End Sub
 
@@ -190,7 +208,7 @@ Public Class frmCompany
                 txtContactNo.Text = dr.Cells(3).Value.ToString()
                 txtEmailID.Text = dr.Cells(4).Value.ToString()
                 txtTIN.Text = dr.Cells(5).Value.ToString()
-                txtSTNo.Text = dr.Cells(6).Value.ToString()
+                txtLicenseNumber.Text = dr.Cells(6).Value.ToString()
                 txtCIN.Text = dr.Cells(7).Value.ToString()
                 Dim data As Byte() = DirectCast(dr.Cells(8).Value, Byte())
                 Dim ms As New MemoryStream(data)
@@ -260,7 +278,7 @@ Public Class frmCompany
         End Try
     End Sub
 
-    Private Sub txtID_TextChanged(sender As System.Object, e As System.EventArgs) Handles txtID.TextChanged
+    Private Sub txtCompanyName_TextChanged(sender As Object, e As EventArgs) Handles txtCompanyName.TextChanged
 
     End Sub
 End Class
