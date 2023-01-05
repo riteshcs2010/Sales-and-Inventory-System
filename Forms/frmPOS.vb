@@ -31,6 +31,7 @@ Public Class frmPOS
         txtTotalPayment.Text = ""
         txtPaymentDue.Text = ""
         dtpInvoiceDate.Value = Today
+        txtBarcode.Focus()
         btnDelete.Enabled = False
         btnUpdate.Enabled = False
         btnSave.Enabled = True
@@ -50,6 +51,8 @@ Public Class frmPOS
         auto()
         lblSet.Text = "Allowed"
         lblUnit.Text = "Unit"
+        txtBarcode.Focus()
+        txtBarcode.Select()
         DataGridView1.Rows.Clear()
         DataGridView2.Rows.Clear()
         Clear()

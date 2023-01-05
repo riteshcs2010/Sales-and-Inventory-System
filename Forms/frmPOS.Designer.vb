@@ -98,7 +98,9 @@ Partial Class frmPOS
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Label16 = New System.Windows.Forms.Label()
+        'txtBarcode.Select()
         Me.txtBarcode = New System.Windows.Forms.TextBox()
+
         Me.btnListReset = New System.Windows.Forms.Button()
         Me.btnListUpdate = New System.Windows.Forms.Button()
         Me.btnRemove = New System.Windows.Forms.Button()
